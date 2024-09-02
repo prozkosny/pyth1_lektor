@@ -1,7 +1,7 @@
 Cvičení: Práce s daty o věku
 1. Vytvořte list ucastnici s křestními jmény: "adam","honza", "lubos"
 2. Vytvořte slovník ucastnici_udaje
-3. Procházejte tímto listem a každé z křestních jmen použijte pro volání requests.get()
+3. Procházejte tímto listem a každé z křestních jmen použijte pro volání requests.get().text
 https://api.agify.io/?name, tj. např. https://api.agify.io/?name=adam
 Výsledek volání si uložte do proměnné odp
 4. Do proměnné vek si uložte hodnotu klíče age z proměnné odp
