@@ -1,0 +1,50 @@
+Cvičení: Práce s daty o věku
+1. Vytvořte list ucastnici s křestními jmény: "adam","honza", "lubos"
+2. Vytvořte slovník ucastnici_udaje
+3. Procházejte tímto listem a každé z křestních jmen použijte pro volání requests.get()
+https://api.agify.io/?name, tj. např. https://api.agify.io/?name=adam
+Výsledek volání si uložte do proměnné odp
+4. Do proměnné vek si uložte hodnotu klíče age z proměnné odp
+5. Do slovníku ucastnici_udaje pridejte jmeno:vek
+6. Procházejte slovníkem a přes print vypište
+print(f'Jméno {jmeno} má odhadovaný věk {vek}')
+
+
+Cvičení: Práce s daty o národnosti
+1. Vytvořte list ucastnici s křesnítmi jmény: "adam", "honza", "lubos".
+2. Vytvořte slovník ucastnici_narodnosti
+
+Tento slovník bude později obsahovat dvojice klíč-hodnota, kde klíčem bude jméno a hodnotou bude předpokládaná národnost.
+3. Procházejte tímto listem a každé z křestních jmen použijte pro volání requests.get():
+
+URL: https://api.nationalize.io/?name=.
+Například: https://api.nationalize.io/?name=adam.
+4. Výsledek volání si uložte do proměnné odp.
+
+
+
+5. Pro každé jméno uložte předpokládané národnosti do slovníku ucastnici_narodnosti
+6. Procházejte slovníkem a přes print vypište:
+
+print(f'Jméno {jmeno} má předpokládanou národnost {narodnost} s pravdepodobnosti {probability}').
+
+
+
+Cvičení: Získání dat o zemích a jejich obyvatelstvu
+1. Vytvořte list zeme s těmito kódy zemí: ["us", "cz", "de"] (pro USA, Českou republiku a Německo).
+2. Vytvořte prázdný slovník zeme_populace
+
+Tento slovník bude obsahovat dvojice klíč-hodnota, kde klíčem bude kód země a hodnotou bude počet obyvatel této země.
+
+3. Procházejte tímto listem ucastnici. Pro každý kód země použijte requests.get() k volání API, které poskytuje informace o zemích. Například: https://restcountries.com/v3.1/alpha/{code}, kde {code} je kód země.
+Výsledek volání si uložte do proměnné odp.
+
+4. Z proměnné odp si uložte hodnotu klíče population do proměnné populace
+
+
+5. Do slovníku zeme_populace přidejte dvojici kód_zeme:populace:
+
+
+6. Iterujte přes slovník zeme_populace a vypište obsah:
+
+Použijte print, abyste zobrazili zprávu ve formátu: Země s kódem {kód_zeme} má populaci {populace} obyvatel.
