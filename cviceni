@@ -48,3 +48,26 @@ Výsledek volání si uložte do proměnné odp.
 6. Iterujte přes slovník zeme_populace a vypište obsah:
 
 Použijte print, abyste zobrazili zprávu ve formátu: Země s kódem {kód_zeme} má populaci {populace} obyvatel.
+
+
+Cvičení: Získání dat o počasí v různých městech
+Vytvořte seznam mesta:
+
+Obsahuje názvy měst: ["Praha", "Brno", "Ostrava"].
+Vytvořte prázdný slovník pocasi_data:
+
+Tento slovník bude obsahovat informace o počasí pro každé město.
+Procházejte seznamem mesta a pro každé město proveďte iteraci přes různé typy informací o počasí:
+
+Typy informací, které budete získávat, jsou: "teplota", "tlak", a "vlhkost".
+Použijte requests.get() k volání API, které poskytuje informace o aktuálním počasí. Například: https://api.open-meteo.com/v1/forecast?latitude=50.0755&longitude=14.4378&current_weather=true.
+Výsledek volání si uložte do proměnné odp.
+Z proměnné odp extrahujte hodnoty pro každý typ informace o počasí:
+
+Použijte vnořené iterace k získání těchto dat.
+Do slovníku pocasi_data přidejte dvojici mesto:informace_o_pocasi:
+
+Každý klíč bude město a hodnotou bude slovník obsahující "teplota", "tlak", a "vlhkost".
+Iterujte přes slovník pocasi_data a vypište obsah:
+
+Použijte print, abyste zobrazili zprávu ve formátu: V {mesto} je teplota {teplota}°C, tlak {tlak} hPa a vlhkost {vlhkost}%.
