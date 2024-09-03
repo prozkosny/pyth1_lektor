@@ -51,13 +51,19 @@ Použijte print, abyste zobrazili zprávu ve formátu: Země s kódem {kód_zeme
 
 
 Cvičení: Získání dat o počasí v různých městech
-Vytvořte seznam mesta:
+Vytvořte slovnik mesta:
 
-Obsahuje názvy měst: ["Praha", "Brno", "Ostrava"].
+mesta = {
+    "Praha": {"latitude": 50.0755, "longitude": 14.4378},
+    "Brno": {"latitude": 49.1951, "longitude": 16.6068},
+    "Ostrava": {"latitude": 49.8209, "longitude": 18.2625}
+}
+
+
 Vytvořte prázdný slovník pocasi_data:
 
 Tento slovník bude obsahovat informace o počasí pro každé město.
-Procházejte seznamem mesta a pro každé město proveďte iteraci přes různé typy informací o počasí:
+Procházejte slovnikem mesta a pro každé město proveďte iteraci přes různé typy informací o počasí:
 
 Typy informací, které budete získávat, jsou: "teplota", "tlak", a "vlhkost".
 Použijte requests.get() k volání API, které poskytuje informace o aktuálním počasí. Například: https://api.open-meteo.com/v1/forecast?latitude=50.0755&longitude=14.4378&current_weather=true.
