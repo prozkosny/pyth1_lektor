@@ -36,7 +36,7 @@ Cvičení: Získání dat o zemích a jejich obyvatelstvu
 
 Tento slovník bude obsahovat dvojice klíč-hodnota, kde klíčem bude kód země a hodnotou bude počet obyvatel této země.
 
-3. Procházejte tímto listem ucastnici. Pro každý kód země použijte requests.get() k volání API, které poskytuje informace o zemích. Například: https://restcountries.com/v3.1/alpha/{code}, kde {code} je kód země.
+3. Procházejte tímto listem zeme. Pro každý kód země použijte requests.get() k volání API, které poskytuje informace o zemích. Například: https://restcountries.com/v3.1/alpha/{code}, kde {code} je kód země.
 Výsledek volání si uložte do proměnné odp.
 
 4. Z proměnné odp si uložte hodnotu klíče population do proměnné populace
