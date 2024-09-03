@@ -77,3 +77,19 @@ Každý klíč bude město a hodnotou bude slovník obsahující temperature, wi
 Iterujte přes slovník pocasi_data a vypište obsah:
 
 Použijte print, abyste zobrazili zprávu ve formátu: V {mesto} je teplota {teplota}°C, rychlost větru {} km/h"
+
+
+
+Cvičení: Počasí
+1. Do promenne mesto uložte vstup uživatele
+2. Do promenne url uložte hodnotu https://www.meteocentrum.cz/predpoved-pocasi/
+3. Přes requests.get() zavolejte url+ mesto, tj. napr. https://www.meteocentrum.cz/predpoved-pocasi/praha, odpověď uložte do proměnné odpoved
+4. Pokud odpoved.status_code není 200, napište uživateli "Chyba, město nenalezeno", jinak vypište "Město nalezeno"
+
+
+Cvičení: Zprávy
+1. Vytvořte list mesta s hodnotami Praha, Brno, Ostrava, Bradavice
+2. Vypište uživateli do konzole přes print hodnoty listu mesta a požádejte jej o výběr města skrze pozici (např. uživatel chce Praha, tak musí zadat 0)
+3. Do proměnné mesto si uložte název města na dané pozici, v případě IndexError vraťte uživateli "Neplatná hodnota", jinak pokračujte dále
+4. Zavolejte https://www.idnes.cz/ + mesto
+5. Pokud je status_code odpovědi 404, napište uživateli "Zprávy nenalezeny", jinak napište "Našel jsem zprávy pro lokalitu {mesto}"
